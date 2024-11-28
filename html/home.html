@@ -1,24 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet"href="style.css">
-        
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kinyambu 1  Welding Expert Company/Garage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <H1><U>KINYAMBU WELDING EXPERT COMPANY/GARAGE</U></H1>
-    <a href="working.html">JOB AREAS YOU NEED:</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <a href="training.html">TRAINING:</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <a href="reachus.html">REACH US:</a></br>
-        Wellcome to our plat form where you will be served and provided with products which you are in need of at the right time
-        and be delivered for free.</br>
-        We also offer several traning of the welding job at daily basis,</br> we have well trained teachers to teach on theory and others in practicle areas
-    <br>
-    Some of the products we offer are:</br>
-    <img src="gate2.jpeg"><img src="gate5.jpeg"heoght="188"><img src="gate4.jpeg"height="188">
-    </br><img src="window.jpeg"height="170"><img src="window4.jpeg"height="170"><img src="window2.jpeg"><img src="window5.jpeg">
-    
+    <header>
+        <h1>Kinyambu Welding Expert Company/Garage</h1>
+        <nav>
+            <ul>
+                <li><a href="working.html">Job Areas</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="reachus.html">Reach Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Welcome to Our Platform</h2>
+            <p>We are dedicated to providing you with top-quality products and services. Our team of skilled professionals is committed to delivering your needs promptly and efficiently.</p>
+        </section>
+
+        <section>
+            <h2>Training Opportunities</h2>
+            <p>We offer daily training sessions in welding theory and practice. Our experienced instructors will guide you through the learning process.</p>
+        </section>
+		<script>
+const rotatableImages = document.querySelectorAll('.rotatable');
+
+rotatableImages.forEach(image => {
+  image.addEventListener('mouseover', () => {
+    image.style.transform = 'rotate(360deg)';
+  });
+
+  image.addEventListener('mouseout', () => {
+    image.style.transform = 'rotate(0deg)';
+  });
+});
+</script>
+        <section>
+            <h2>Our Products</h2>
+            <div class="product-gallery">
+                <img src="gate2.jpeg" alt="Gate Design 1" class="rotatable">
+                <img src="gate5.jpeg" alt="Gate Design 2" class="rotatable">
+                <img src="gate4.jpeg" alt="Gate Design 3" class="rotatable">
+               
+                <img src="window4.jpeg" alt="Window Design 2" class="rotatable">
+                <img src="window2.jpeg" alt="Window Design 3" class="rotatable">
+                <img src="window5.jpeg" alt="Window Design 4" class="rotatable">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        const rotatableImages = document.querySelectorAll('.rotatable');
+
+        rotatableImages.forEach(image => {
+            image.addEventListener('mouseover', () => {
+                image.style.transform = 'rotate(360deg)';
+            });
+
+            image.addEventListener('mouseout', () => {
+                image.style.transform = 'rotate(0deg)';
+            });
+        });
+    </script>
 </body>
 </html>
