@@ -1,20 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet"href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kinyambu 1  Welding Expert Company/Garage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <body> <H1><U>KINYAMBU WELDING EXPERT COMPANY/GARAGE</U></H1>
-    <a href="home.html">HOME PAGE:</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <a href="working.html">JOB AREAS YOU NEED:</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-    <a href="reachus.html">REACH US:</a></br>
-    We do train our beginners and educate them on several matters arising conserning welding,</br>
-    We educate them on the safety gears which they do protect themselves from severe damage from the sharp edges as they interact with them.
-    </br>
-    Some of the tools which they interacts with are as follows;</br><img src="tool2.jpeg"><img src="tool1.jpeg">
-    <img src="tool3.jpeg"><img src="tool5.jpeg">
+    <header>
+        <h1>Kinyambu Welding Expert Company/Garage</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="working.html">Job Areas</a></li>
+                <li><a href="training.html">Training</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+	<script>
+  // Function to add a click event listener to the Get Directions link
+  function initGetDirectionsLink() {
+    const getDirectionsLink = document.querySelector('.contact a');
+    getDirectionsLink.addEventListener('click', (event) => {
+      // Prevent the default behavior of opening the link in the current page
+      event.preventDefault();
+      
+      // Get user's current location (if allowed)
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const userLatitude = position.coords.latitude;
+          const userLongitude = position.coords.longitude; 1 
+          
+          // Build the Google Maps URL with user's location and business address
+          const businessAddress = "[Your Business Address]"; // Replace with your actual business address
+          const googleMapsUrl = `https://www.google.com/maps?dir=${userLatitude},${userLongitude}/${businessAddress}`;
+          
+          // Open the Google Maps URL in a new tab
+          window.open(googleMapsUrl, '_blank');
+        },
+        (error) => {
+          console.error('Error getting user location:', error);
+          // Handle location permission denied or other errors
+          alert("Unable to get your location. Please allow location access or enter the business address manually in Google Maps.");
+        }
+      );
+    });
+  }
+
+  // Call the function to initialize the Get Directions link
+  initGetDirectionsLink();
+</script>
+
+    <main>
+        <section class="hero">
+            <h2>Your Trusted Welding Partner</h2>
+            <p>At Kinyambu Welding, we provide top-notch welding services and training. Our experienced team is dedicated to delivering quality workmanship and ensuring your safety.</p>
+           
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Welding and Fabrication</li>
+                <li>Metal Repair and Restoration</li>
+                <li>Custom Metalwork</li>
+                <li>Welding Training Programs</li>
+            </ul>
+        </section>
+
+        <section class="training">
+            <h2>Training and Safety</h2>
+            <p>We offer comprehensive training programs to equip individuals with the skills and knowledge needed to excel in the welding industry. Safety is our top priority, and we emphasize the importance of using proper safety gear and techniques.</p>
+            <div class="tool-gallery">
+                <img src="tool2.jpeg" alt="Welding Tool 1">
+                <img src="tool1.jpeg" alt="Welding Tool 2">
+                <img src="tool3.jpeg" alt="Welding Tool 3">
+                <img src="tool5.jpeg" alt="Welding Tool 4">
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Reach out to us for inquiries, quotes, or to schedule a training session.</p>
+            <ul>
+                <li><strong>Phone:</strong> 0111-730-293</li>
+                <li><strong>Email:</strong> petermunyaka05@gmail.com</li>
+               
+            </ul>
+            <a href="https://www.google.com/maps/place/[Your+Address]">Get Directions</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Kinyambu Welding Expert Company/Garage. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
